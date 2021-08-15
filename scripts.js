@@ -8,13 +8,14 @@ const addButton = document.getElementById("add-button")
 
 let myLibrary = [];
 
-function Book(title, author, pages, status) {
+class Book {
+    constructor (title, author, pages, status) {
     this.title = title;
     this.author = author;
     this.pages = pages;
     this.status = status;
 }
-
+}
 
 function addBookToLibrary() {
     if (titleInput.value != "" && authorInput.value != "" && pagesInput.value) {
